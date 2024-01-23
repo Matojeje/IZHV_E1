@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Author : [Name] [Surname], Tomas Polasek (template)
+% Author : Matous Drizhal, Tomas Polasek (template)
 % Description : First exercise in the Introduction to Game Development course.
 %   It deals with an analysis of a selected title from the point of its genre, 
 %   style, and mechanics.
@@ -7,7 +7,7 @@
 
 \documentclass[a4paper,10pt,english]{article}
 
-\usepackage[left=2.50cm,right=2.50cm,top=1.50cm,bottom=2.50cm]{geometry}
+\usepackage[left=2.20cm,right=2.20cm,top=1.10cm,bottom=2.00cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, urlcolor=blue}
@@ -18,7 +18,7 @@
 Analysis of Mechanics%
 }
 \author{%
-[Name] [Surname] ([Login])%
+Matouš Dřízhal (xdrizh00)%
 }
 \date{}
 
@@ -32,17 +32,17 @@ Analysis of Mechanics%
 
 \begin{itemize}
 
-\item[] \textbf{Title:} \ph{Name of the (serious) game}
+\item[] \textbf{Title:} OneShot
 
-\item[] \textbf{Released:} \ph{Year of the initial release}
+\item[] \textbf{Released:} 2016
 
-\item[] \textbf{Author:} \ph{Author, game studio / publisher, or N/A if unknown}
+\item[] \textbf{Author:} Future Cat, Komodo\footnote{Publisher as of 2022 according to \href{https://steamdb.info/app/420530/history/?changeid=15417799}{SteamDB}, previously Degica}
 
-\item[] \textbf{Primary Genre:} \ph{Genre(s) of the core mechanics}
+\item[] \textbf{Primary Genre:} Puzzle
 
-\item[] \textbf{Secondary Genre:} \ph{Additional genre(s)}
+\item[] \textbf{Secondary Genre:} Adventure, RPG
 
-\item[] \textbf{Style:} \ph{Style of the game -- realistic, cartoon, abstract, ...}
+\item[] \textbf{Style:} Surreal, fantasy, meta
 
 \end{itemize}
 
@@ -50,29 +50,39 @@ Analysis of Mechanics%
 
 \section*{\centering Analysis}
 
-\ph{Replace all text in this section with the analysis...}
+\subsection*{Premise}
 
-\subsection*{Instructions}
+OneShot is an RPG Maker game about a simulation of a long-gone world, in which the player guides the protagonist (a lost child called Niko) through its three main areas, with the task of saving the simulated world from dying out as well. It's an RPG in a sense that Niko and a few other special characters talk to the player directly, seeing them as a sort of deity. There's a clear distinction that the player is \emph{not} the game's protagonist, but is merely accompanying Niko. Some could argue that this sort of interaction also delves into alternate reality gaming, as Niko is implied to come from a ``real world" similar to the player's, and has a life outside of the pixelated world of OneShot. Niko also serves as the game world's host, with the player only being able to play the game when Niko is awake: one can save the game by putting Niko to bed. (It's important to note that the first area -- in which Niko, controlled by the player but not yet aware of it, finds an important key item -- feels very detached from the rest, both from narrative and gameplay perspective.)
 
-In this assignment, you are tasked with the analysis of a selected game-related title. The title may be a game, video game, serious game, or even serious application using game development tools. Your goal is to analyze the title from the point of its genres and style. As a part of this template, there are some placeholders and hints \ph{like this one}, which you should read and potentially replace with your own text.
+\subsection*{Puzzles}
 
-\subsection*{Content}
+It's possible to sort this game's puzzles into three categories. The first category would be the \textbf{in-universe} puzzles, which range from fetch quests, crafting and combining items in the inventory similar to Machinarium, and minigames replicating Sokoban and Mastermind. These puzzles are given to the player (and Niko) by NPCs or the environment itself. The second category is the \textbf{meta} puzzles, which usually involve interacting with a sprite of a desktop computer, named ``The Entity'' in-game, who gives the player hints on how to tackle the puzzle (often without Niko's knowledge). Solving it always requires some sort of interaction with the user's actual computer -- manipulating the game's window, files in the PC's libraries, or even the wallpaper. It's for this reason that the game recommends playing in windowed mode, and the console re-releases include a small interactive mock-up of a desktop environment. The third category, \textbf{clover} puzzles, is functionally similar. Only appearing in the optional Solstice route, it consists of interacting with a separate executable file showing torn-out journal pages with hints, and asks the player to line them up with the main game window, which talks with the clover executable and dynamically updates the currently shown journal page.
 
-After selecting the \ph{title}, you should first find out when it was \ph{first released} and who \ph{created it}. Be sure to consider the actual information if you choose a re-iteration or ``enhanced edition.'' 
+\subsection*{Closing thoughts}
 
-Next, look at the game (or, even better, play it!) and determine the \ph{primary genre}. This genre should be the one supporting the core gameplay. You can use any genre taxonomy (not just the one from the lectures), but keep it unambiguous. A Game can have multiple modes of play -- e.g., Minecraft with creative and survival modes -- in which case you can choose any number of them, but be sure to emphasize your choice in the analysis.
+The fact that the game looks and feels like any other RPG Maker game at first -- with its very common pixel art style\footnote{There are also some non-pixel art sections, notably Niko's dreams and the Solstice clover journal.} and other tropes that are easy to spot across RPG Maker games, once one makes or plays a few of them -- subverts the player's expectation of what this game is capable of, surprising them with each new meta puzzle. The game heavily leans into this meta interaction between the in-game world and the player's computer, serving as the base for the storytelling narrative. The first hint of this meta interaction is when The Entity speaks directly to the player, referring to them using their actual name saved in the OS. As the game progresses and the meta puzzles get more and more involved, the world starts deteriorating faster, and in the Solstice route, it even plays with the idea of going ``out-of-bounds" being the only way to progress.
 
-After these steps, look at the \ph{secondary genres} and select one or more of them. Using Survival Minecraft as an example, we have a role-playing sandbox (primary) combined with the casual building and a hint of roguelike with the hardcore mode (secondary). Finally, determine the game's \ph{style} -- a combination of visual, aural, tactile, etc. For example, Minecraft can be considered a retro or cartoon-styled game.
-
-Finally, move to the \ph{free-form text} part of the analysis in the form of short prose. Images should be used sparingly and best avoided them entirely. You should primarily focus on: 
-\begin{enumerate}
-    \item How are the primary and secondary genres reflected in the gameplay?
-    \item How do the primary and secondary genre interact? Do the secondary genres support the primary genre? Do they enhance the game, or are they detrimental?
-    \item Does the style support the gameplay? Why was it chosen?
-\end{enumerate}
-
-\subsection*{Formatting \& Submission}
-
-Your submission must follow a similar \textbf{structure} as this template. You can either use the provided \LaTeX\ template or roughly replicate it in some other text processing software. The format of the analysis section is left up to you -- you can include sub-sections or write one long text. However, your whole document \textbf{must fit} on exactly one page of \textbf{A4}. The only accepted document format is \textbf{pdf}. Finally, you can submit the pdf by following the submission guidelines detailed on the \href{http://cphoto.fit.vutbr.cz/ludo/courses/izhv/exercises/sub/}{course's website}.
+%\subsection*{Instructions}
+%
+%In this assignment, you are tasked with the analysis of a selected game-related title. The title may be a game, video game, serious game, or even serious application using game development tools. Your goal is to analyze the title from the point of its genres and style. As a part of this template, there are some placeholders and hints \ph{like this one}, which you should read and potentially replace with your own text.
+%
+%\subsection*{Content}
+%
+%After selecting the \ph{title}, you should first find out when it was \ph{first released} and who \ph{created it}. Be sure to consider the actual information if you choose a re-iteration or ``enhanced edition.'' 
+%
+%Next, look at the game (or, even better, play it!) and determine the \ph{primary genre}. This genre should be the one supporting the core gameplay. You can use any genre taxonomy (not just the one from the lectures), but keep it unambiguous. A Game can have multiple modes of play -- e.g., Minecraft with creative and survival modes -- in which case you can choose any number of them, but be sure to emphasize your choice in the analysis.
+%
+%After these steps, look at the \ph{secondary genres} and select one or more of them. Using Survival Minecraft as an example, we have a role-playing sandbox (primary) combined with the casual building and a hint of roguelike with the hardcore mode (secondary). Finally, determine the game's \ph{style} -- a combination of visual, aural, tactile, etc. For example, Minecraft can be considered a retro or cartoon-styled game.
+%
+%Finally, move to the \ph{free-form text} part of the analysis in the form of short prose. Images should be used sparingly and best avoided them entirely. You should primarily focus on: 
+%\begin{enumerate}
+%    \item How are the primary and secondary genres reflected in the gameplay?
+%    \item How do the primary and secondary genre interact? Do the secondary genres support the primary genre? Do they enhance the game, or are they detrimental?
+%    \item Does the style support the gameplay? Why was it chosen?
+%\end{enumerate}
+%
+%\subsection*{Formatting \& Submission}
+%
+%Your submission must follow a similar \textbf{structure} as this template. You can either use the provided \LaTeX\ template or roughly replicate it in some other text processing software. The format of the analysis section is left up to you -- you can include sub-sections or write one long text. However, your whole document \textbf{must fit} on exactly one page of \textbf{A4}. The only accepted document format is \textbf{pdf}. Finally, you can submit the pdf by following the submission guidelines detailed on the \href{http://cphoto.fit.vutbr.cz/ludo/courses/izhv/exercises/sub/}{course's website}.
 
 \end{document}
